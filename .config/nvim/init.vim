@@ -9,26 +9,24 @@ Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 colorscheme seoul256
 
-set nu rnu
+set nu rnu cursorline
 set tabstop=2 shiftwidth=2 expandtab
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip 
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-p> :GFiles<CR>
+map <A-f> :GGrep<CR>
+
+" navigate between windows
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ }
 let g:airline_theme='luna'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
@@ -36,3 +34,7 @@ command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   { 'dir': systemlist('git rev-parse --show-toplevel')[0] }, <bang>0)
+
+" Switch relativenumber to norelativenumber on change window focus
+autocmd WinEnter,FocusGained * :setlocal number relativenumber
+autocmd WinLeave,FocusLost   * :setlocal number norelativenumber
