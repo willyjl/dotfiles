@@ -12,7 +12,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
-colorscheme seoul256
+colorscheme deus
 
 set nu rnu cursorline
 set tabstop=2 shiftwidth=2 expandtab
