@@ -27,3 +27,8 @@ let g:ctrlp_custom_ignore = {
 let g:airline_theme='luna'
 
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
