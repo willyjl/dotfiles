@@ -6,6 +6,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Townk/vim-autoclose'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 colorscheme seoul256
@@ -24,3 +25,5 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 let g:airline_theme='luna'
+
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
