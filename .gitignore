@@ -1,6 +1,6 @@
 *
 !.gitignore
 !.gitignore_global
-!.config
+!.config/nvim/config
 !.aliases
 !.zshrc
