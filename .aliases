@@ -4,3 +4,5 @@ fi
 alias repo="cd ~/repo"
 alias usmall="cd ~/repo/us-ui-mall"
 alias startmall="sudo service nginx start; sudo service redis-server start;"
+alias gpof="git push origin $(git_current_branch) --force-with-lease"
+alias gpof!="git push origin $(git_current_branch) --force"
