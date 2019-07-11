@@ -2,7 +2,7 @@ export ZSH="/home/willy/.oh-my-zsh"
 
 ZSH_THEME="avit"
 
-plugins=(git)
+plugins=(git vscode)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
