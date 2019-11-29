@@ -7,7 +7,7 @@ alias repo="cd ~/repo"
 if grep -q Microsoft /proc/version; then
   alias usmall="cd ~/repo/us-ui-mall"
   alias crimsonbot="cd ~/repo/crimsonbot"
-  alias startmall="sudo service nginx start; sudo service redis-server start;"
+  alias startmall="sudo ~/repo/us-ui-mall/script/start_nginx; sudo service redis-server start;"
   alias be="bundle exec"
   alias berc="SSO_DOMAIN=beta DOMAIN=qa-www.rakuten.com be rails console"
 fi

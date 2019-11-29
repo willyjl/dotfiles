@@ -11,6 +11,7 @@ export EDITOR='vi'
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.yarn/bin/:$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export GOPATH="$HOME/repo/golang"
 
 if grep -q Microsoft /proc/version; then
   export DISPLAY=localhost:0.0
