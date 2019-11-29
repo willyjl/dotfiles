@@ -1,0 +1,4 @@
+alias usmall="cd ~/repo/us-ui-mall"
+alias startmall="sudo ~/repo/us-ui-mall/script/start_nginx; sudo service redis-server start;"
+alias be="bundle exec"
+alias berc="SSO_DOMAIN=beta DOMAIN=qa-www.rakuten.com be rails console"
