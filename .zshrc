@@ -1,6 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -19,6 +16,7 @@ export EDITOR='vi'
 export PATH="$HOME/.rbenv/bin:$HOME/.yarn/bin/:$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 if grep -q Microsoft /proc/version; then
+  # specific for wsl
   export DISPLAY=localhost:0.0
   export DOCKER_HOST=localhost:2375
   source $DOTFILES/.wsl-aliases
