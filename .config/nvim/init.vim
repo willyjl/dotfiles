@@ -29,6 +29,7 @@ nnoremap <C-H> <C-W><C-H>
 
 let g:airline_theme='luna'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let NERDTreeShowHidden=1
 
 command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(

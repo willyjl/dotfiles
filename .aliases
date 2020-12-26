@@ -2,5 +2,4 @@ if [ -x  "$(command -v nvim)" ]; then
   alias vi=nvim
 fi
 
-alias repo="cd ~/repo"
-alias jdorama="cd ~/repo/jdorama"
+alias repos="cd ~/repos"
