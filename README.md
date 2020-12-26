@@ -11,6 +11,7 @@ ln -s ~/dotfiles/.config ~/.config
 ```
 
 - Inside neovim, execute `PlugInstall` to download plugins.
+- Trigger FZF installation through Ctrl+z shortcut.
 
 ## Zsh
 
