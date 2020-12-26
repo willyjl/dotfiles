@@ -21,7 +21,7 @@ export PATH="$HOME/.rbenv/bin:$HOME/.yarn/bin/:$HOME/.rbenv/plugins/ruby-build/b
 if grep -q Microsoft /proc/version; then
   export DISPLAY=localhost:0.0
   export DOCKER_HOST=localhost:2375
-  source $HOME/.wsl-aliases
+  source $DOTFILES/.wsl-aliases
 fi
 
 eval "$(rbenv init -)"
