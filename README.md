@@ -4,12 +4,18 @@
 
 - [Install Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 - [Install Vim Plug on Neovim](https://github.com/junegunn/vim-plug#neovim)
-- Inside nvim execute `PlugInstall`
+- Link neovim config:
+
+```
+ln -s ~/dotfiles/.config ~/.config
+```
+
+- Inside neovim, execute `PlugInstall` to download plugins.
 
 ## Zsh
 
 - Install Zsh
-- Link dotfiles .zshrc to home directory
+- Link .zshrc to home directory
 
 ```
 ln -s ~/dotfiles/.zshrc ~/.zshrc
