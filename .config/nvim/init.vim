@@ -10,9 +10,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'sheerun/vim-polyglot'
+Plug 'pineapplegiant/spaceduck'
 call plug#end()
 
-colorscheme deus
+colorscheme spaceduck
+let g:airline_theme='spaceduck'
 
 set nu rnu cursorline
 set tabstop=2 shiftwidth=2 expandtab
@@ -27,7 +30,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let g:airline_theme='luna'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let NERDTreeShowHidden=1
 
