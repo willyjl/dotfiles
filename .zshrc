@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 source $DOTFILES/.aliases
 
 export EDITOR='vi'
-export PATH="$HOME/.rbenv/bin:$HOME/.yarn/bin/:$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$HOME/.yarn/bin/:$HOME/.rbenv/plugins/ruby-build/bin:$HOME/.jenv/bin:$PATH"
 
 if grep -q Microsoft /proc/version; then
   # specific for wsl
@@ -23,6 +23,7 @@ if grep -q Microsoft /proc/version; then
 fi
 
 eval "$(rbenv init -)"
+eval "$(jenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

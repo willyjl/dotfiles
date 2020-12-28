@@ -4,3 +4,4 @@ fi
 
 alias repos="cd ~/repos"
 alias be="bundle exec"
+alias rmserverpid="rm ./tmp/pids/server.pid"
