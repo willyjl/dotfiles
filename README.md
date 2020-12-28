@@ -28,3 +28,18 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 - [Install rbenv](https://github.com/rbenv/rbenv#basic-github-checkout)
 - [Add ruby-build](https://github.com/rbenv/ruby-build#installation)
+
+## Configured VIM Shortcuts
+
+- (<C-n>) Show NERDTree
+- (<A-]>) Next tab
+- (<A-[>) Prev tab
+
+### Visual Mode
+
+- (gc) Comment
+- (g<) Uncomment
+
+### NERDTree
+
+- (I) Show hidden file

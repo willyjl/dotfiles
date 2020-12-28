@@ -12,6 +12,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 Plug 'pineapplegiant/spaceduck'
+Plug 'tomtom/tcomment_vim'
 call plug#end()
 
 colorscheme spaceduck
@@ -29,6 +30,8 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nnoremap <A-]> gt
+nnoremap <A-[> gT
 
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let NERDTreeShowHidden=1
