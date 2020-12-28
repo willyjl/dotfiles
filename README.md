@@ -6,7 +6,7 @@
 - [Install Vim Plug on Neovim](https://github.com/junegunn/vim-plug#neovim)
 - Link neovim config:
 
-```
+```bash
 ln -s ~/dotfiles/.config ~/.config
 ```
 
@@ -18,7 +18,7 @@ ln -s ~/dotfiles/.config ~/.config
 - Install Zsh
 - Link .zshrc to home directory
 
-```
+```bash
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ```
 
@@ -31,14 +31,14 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 ## Configured VIM Shortcuts
 
-- (<C-n>) Show NERDTree
-- (<A-]>) Next tab
-- (<A-[>) Prev tab
+- <C-n> Show NERDTree
+- <A-]> Next tab
+- <A-[> Prev tab
 
 ### Visual Mode
 
-- (gc) Comment
-- (g<) Uncomment
+- `gc` Comment
+- `g<` Uncomment
 
 ### NERDTree
 

@@ -13,6 +13,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 Plug 'pineapplegiant/spaceduck'
 Plug 'tomtom/tcomment_vim'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 colorscheme spaceduck
@@ -35,6 +37,9 @@ nnoremap <A-[> gT
 
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let NERDTreeShowHidden=1
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal_code_blocks = 0
 
 command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
