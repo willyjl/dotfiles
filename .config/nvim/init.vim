@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdtree'
-Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Townk/vim-autoclose'
@@ -15,10 +14,11 @@ Plug 'pineapplegiant/spaceduck'
 Plug 'tomtom/tcomment_vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
-colorscheme spaceduck
-let g:airline_theme='spaceduck'
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
 
 set nu rnu cursorline
 set tabstop=2 shiftwidth=2 expandtab
@@ -27,11 +27,13 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-p> :GFiles<CR>
 map <A-f> :GGrep<CR>
 
-" navigate between windows
+" Navigate between windows
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Navigate between tabs
 nnoremap <A-]> gt
 nnoremap <A-[> gT
 
